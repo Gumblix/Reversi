@@ -1,0 +1,11 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+	MainView view = new MainView();
+	Player player = Player.HUMAN;
+	Board board = new Reversi(player, 3);
+	new MainListener(view, board, player);
+    }
+
+}
